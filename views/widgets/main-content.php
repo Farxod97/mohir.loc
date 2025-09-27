@@ -33,7 +33,7 @@
                     <div class="col-lg-12">
                       <div class="blog-post">
                         <div class="blog-thumb">
-                          <img style="width: 730px; height: 322px;; object-fit:cover" src="<?=$image?>" alt="">
+                          <img style="" src="<?=$image?>" alt="">
                         </div>
                         <div class="down-content">
                           <span><?=$newsItems['category_name']?></span>

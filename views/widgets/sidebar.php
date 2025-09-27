@@ -16,7 +16,7 @@
                     <div class="content">
                       <ul>
                         <?php if(!empty($news)): foreach($news as $newsItems) {?>
-                            <li><a href="post-details.html">
+                            <li><a href="?controller=news_view&id=<?=$newsItems['id']?>">
                             <h5><?= $newsItems['title']?></h5>
                             <span><?=date('d.m.Y | H:i', strtotime($newsItems['create_at']))?></span>
                             </a></li>
@@ -32,8 +32,8 @@
                     </div>
                     <div class="content">
                       <ul>
-                        <?php if(!empty(!$category)): foreach($category as $category_item) {?>
-                            <li><a href="#">- <?=$category_item['name']?></a></li>
+                        <?php if(!empty($category)): foreach($category as $category_item) {?>
+                            <li><a href="?controller=news_category&id=<?=$category_item['id']?>">- <?=$category_item['name']?></a></li>
                         <?php } endif?>
                       </ul>
                     </div>

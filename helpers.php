@@ -12,15 +12,15 @@ function dd($arr, $die = false) {
 
 function getImage($table_name, $id, $filename) {
     if(empty($filename)) {
-        return "assets/images/default.jpg";
+        return "assets/images/default.jpg?v=".time();
     }
 
     $imagePath = "uploades/{$table_name}/{$id}/{$filename}";
     if(file_exists($imagePath)) {
-        return $imagePath;
+        return $imagePath.'?v='.time();
     }
 
-    return 'assets/images/default.jpg';
+    return 'assets/images/default.jpg.?v='.time();
 
 }
 
