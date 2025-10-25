@@ -1,7 +1,7 @@
 <?php
 require_once "models/mainModel.php";
-$menus = getMenus();
-$menus = getMenus();
+$menus = getAllMenus();
+$menus = getAllMenus();
 $category = getCategory();
 $tags = getTags();
 $socials = getSocials();
